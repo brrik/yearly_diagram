@@ -1,0 +1,46 @@
+.max_width{
+    width: auto;
+}
+
+.input_area{
+    width: 200px;
+}
+
+#output_table{
+    table-layout: fixed;
+    width: auto;
+    border-collapse: collapse;
+}
+
+#output td{
+    width: 300px;
+}
+
+#output_table #output td {
+    white-space: pre-wrap;     /* \n を改行として表示 + 折り返し */
+    overflow-wrap: anywhere;   /* 長い連続文字でも折る */
+    word-break: break-word;    /* 互換用 */
+}
+
+#output_div{
+    margin-top: 60px;
+}
+
+/* 例：出力テーブルの各月セルに色を当てる */
+#output_mm01 { background:#4A6FA5; }
+#output_mm02 { background:#7B6D8D; }
+#output_mm03 { background:#E6A8B7; }
+#output_mm04 { background:#F2B5C4; }
+#output_mm05 { background:#6FB98F; }
+#output_mm06 { background:#5FA8A0; }
+#output_mm07 { background:#4FC3F7; }
+#output_mm08 { background:#F4C430; }
+#output_mm09 { background:#C9A24D; }
+#output_mm10 { background:#D96C4A; }
+#output_mm11 { background:#8C5E3C; }
+#output_mm12 { background:#2F3E5C; }
+
+/* 文字の可読性を確保 */
+#output td {
+  color: #ffffff;
+}

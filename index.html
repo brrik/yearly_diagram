@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <title>わたしの年表</title>
+</head>
+<body>
+    <h1>わたしの年表</h1>
+    <p>今年、あなたはどんな一年をすごしましたか？</p>
+    <table class="max_width">
+        <tr>
+            <th>月</th>
+            <th>トピック</th>
+        </tr>
+        <tr>
+            <td>1月</td>
+            <td><textarea class="input_area" name="mm01" id="mm01" placeholder="トピックス"></textarea></td>
+        </tr>
+        <tr>
+            <td>2月</td>
+            <td><textarea class="input_area" name="mm02" id="mm02" placeholder="トピックス"></textarea></td>
+        </tr>
+        <tr>
+            <td>3月</td>
+            <td><textarea class="input_area" name="mm03" id="mm03" placeholder="トピックス"></textarea></td>
+        </tr>
+        <tr>
+            <td>4月</td>
+            <td><textarea class="input_area" name="mm04" id="mm04" placeholder="トピックス"></textarea></td>
+        </tr>
+        <tr>
+            <td>5月</td>
+            <td><textarea class="input_area" name="mm05" id="mm05" placeholder="トピックス"></textarea></td>
+        </tr>
+        <tr>
+            <td>6月</td>
+            <td><textarea class="input_area" name="mm06" id="mm06" placeholder="トピックス"></textarea></td>
+        </tr>
+        <tr>
+            <td>7月</td>
+            <td><textarea class="input_area" name="mm07" id="mm07" placeholder="トピックス"></textarea></td>
+        </tr>
+        <tr>
+            <td>8月</td>
+            <td><textarea class="input_area" name="mm08" id="mm08" placeholder="トピックス"></textarea></td>
+        </tr>
+        <tr>
+            <td>9月</td>
+            <td><textarea class="input_area" name="mm09" id="mm09" placeholder="トピックス"></textarea></td>
+        </tr>
+        <tr>
+            <td>10月</td>
+            <td><textarea class="input_area" name="mm10" id="mm10" placeholder="トピックス"></textarea></td>
+        </tr>
+        <tr>
+            <td>11月</td>
+            <td><textarea class="input_area" name="mm11" id="mm11" placeholder="トピックス"></textarea></td>
+        </tr>
+        <tr>
+            <td>12月</td>
+            <td><textarea class="input_area" name="mm12" id="mm12" placeholder="トピックス"></textarea></td>
+        </tr>
+    </table>
+    <button id="btnSavePng">年表を保存（PNG）</button>
+    
+    <div id="output_div" class="max_width">
+        <table class="max_width" id="output_table">
+        <tr>
+            <td>Jan</td>
+            <td>Feb</td>
+            <td>Mar</td>
+            <td>Apr</td>
+            <td>May</td>
+            <td>Jun</td>
+            <td>Jul</td>
+            <td>Aug</td>
+            <td>Sep</td>
+            <td>Oct</td>
+            <td>Nov</td>
+            <td>Dec</td>
+        </tr>
+        <tr><td colspan="12"><hr></td></tr>
+        <tr id="output">
+            <td id="output_mm01"></td>
+            <td id="output_mm02"></td>
+            <td id="output_mm03"></td>
+            <td id="output_mm04"></td>
+            <td id="output_mm05"></td>
+            <td id="output_mm06"></td>
+            <td id="output_mm07"></td>
+            <td id="output_mm08"></td>
+            <td id="output_mm09"></td>
+            <td id="output_mm10"></td>
+            <td id="output_mm11"></td>
+            <td id="output_mm12"></td>
+        </tr>
+
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
